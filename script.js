@@ -208,7 +208,6 @@ function showResult({ verdict, confidence, model, durationMs }) {
   // Meta info
   elMetaModel.textContent = model;
   elMetaTime.textContent  = `${durationMs}ms`;
-  elMetaDate.textContent  = new Date().toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' });
 
   // Scroll ke result card jika perlu
   elResultCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
