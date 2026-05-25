@@ -236,7 +236,7 @@ elBtnAnalyze.addEventListener('click', async () => {
   await analyze(code);
 });
 
-const API_URL = 'http://localhost:5000/predict';
+const API_URL = 'https://aicodetrace-backend.onrender.com/predict';
 async function analyze(code) {
   const startTime = Date.now();
 
